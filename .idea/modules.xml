@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ScreamMach.iml" filepath="$PROJECT_DIR$/ScreamMach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScreenMach.iml" filepath="$PROJECT_DIR$/ScreenMach.iml" />
     </modules>
   </component>
 </project>
