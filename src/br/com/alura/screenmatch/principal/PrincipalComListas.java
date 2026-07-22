@@ -5,16 +5,17 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O Poderoso Chefão", 1970);
+        Filme meuFilme = new Filme("O Poderoso Chefão ", 1970);
         meuFilme.avalia(9);
-        Filme outroFilme = new Filme("Avatar", 2023);
+        Filme outroFilme = new Filme("Avatar ", 2023);
         outroFilme.avalia(6);
-        var filmeDoPaulo = new Filme("Dogville", 2003);
+        var filmeDoPaulo = new Filme("Dogville ", 2003);
         filmeDoPaulo.avalia(10);
-        Serie lost = new Serie("Lost", 2000);
+        Serie lost = new Serie("Lost ", 2000);
 
         //Variável por referência
         Filme f1 = filmeDoPaulo;
@@ -31,5 +32,20 @@ public class PrincipalComListas {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Paulo");
+        buscaPorArtista.add("Jaqueline");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("depois da ordenação!");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(lista);
+        System.out.println("Lista de titulos ordenadas: ");
+        System.out.println(lista);
+
     }
 }
